@@ -1,0 +1,39 @@
+<!--Write a CSS 2D rule with translate() property to move an element.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Translate Example</title>
+    <style>
+        /* Basic styles for the div element */
+        .move-box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: transform 0.5s ease; /* Smooth transition for movement */
+        }
+
+        /* Apply the 2D translate() property when the mouse hovers over the div */
+        .move-box:hover {
+            transform: translate(200px, 100px); /* Move 200px right and 100px down */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Move the Box with translate method</h2>
+
+    <div class="move-box">
+        Hover Me
+    </div>
+
+</body>
+</html>

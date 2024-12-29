@@ -1,0 +1,31 @@
+<!--Write a CSS class to change size of font, color font family when mouse moves over of span tag in your webpage.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Example</title>
+    <style>
+        /* Initial styles for the span element */
+        .hover-effect {
+            font-size: 16px;
+            color: black;
+            font-family: Arial, sans-serif;
+            transition: all 0.3s ease; /* Smooth transition for all properties */
+        }
+
+        /* Styles to apply when the mouse hovers over the span */
+        .hover-effect:hover {
+            font-size: 24px;           /* Increase font size on hover */
+            color: #ff6347;            /* Change font color to tomato */
+            font-family: 'Courier New', Courier, monospace; /* Change font family */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hover Over the Text</h2>
+    <p>Move your mouse over the word <span class="hover-effect">Hover Me!</span> to see the changes.</p>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!--Write a media rule to change only the font size of web page when it's resized.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Font Size</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Default font size */
+        h1 {
+            font-size: 32px;
+        }
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        /* Media query for screens smaller than 400px */
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Font Size</h1>
+
+    <p>This is a simple example of changing font size based on screen width.</p>
+
+</body>
+</html>

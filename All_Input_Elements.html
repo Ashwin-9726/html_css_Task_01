@@ -1,0 +1,93 @@
+<!--Create an HTML page, which should contain all types of input elements.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Input Types Form</title>
+</head>
+<body>
+
+    <h2>Form with All Input Types</h2>
+
+    <form action="#" method="POST">
+        
+        <!-- Text input -->
+        <label for="textInput">Text Input:</label>
+        <input type="text" id="textInput" name="textInput" placeholder="Enter text here">
+        <br><br>
+
+        <!-- Email input -->
+        <label for="emailInput">Email Input:</label>
+        <input type="email" id="emailInput" name="emailInput" placeholder="Enter your email">
+        <br><br>
+
+        <!-- Password input -->
+        <label for="passwordInput">Password Input:</label>
+        <input type="password" id="passwordInput" name="passwordInput" placeholder="Enter password">
+        <br><br>
+
+        <!-- Radio buttons -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" checked> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other
+        <br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked> Yes, please
+        <br><br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Number input -->
+        <label for="quantity">Quantity (1 to 10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <br><br>
+
+        <!-- Range input -->
+        <label for="volume">Volume (0-100):</label>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+        <br><br>
+
+        <!-- File input -->
+        <label for="fileUpload">Upload File:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+        <br><br>
+
+        <!-- Color input -->
+        <label for="colorPicker">Pick a Color:</label>
+        <input type="color" id="colorPicker" name="colorPicker">
+        <br><br>
+
+        <!-- Telephone input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+        <br><br>
+
+        <!-- Time input -->
+        <label for="appt">Appointment Time:</label>
+        <input type="time" id="appt" name="appt">
+        <br><br>
+
+        <!-- URL input -->
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website" placeholder="Enter URL">
+        <br><br>
+
+        <!-- Search input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search here">
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

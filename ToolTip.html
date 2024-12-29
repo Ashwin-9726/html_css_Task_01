@@ -1,0 +1,47 @@
+<!--Define a CSS class to show tooltip when mouse moved over the elements.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Example</title>
+    <style>
+        /* Style for the element that will show the tooltip */
+        .tooltip {
+            position: relative; /* Required for positioning the tooltip */
+            display: inline-block; /* So it behaves like a text element */
+            cursor: pointer; /* Show pointer on hover */
+        }
+
+        /* Tooltip content */
+        .tooltip::after {
+            content: "This is a tooltip"; /* The text that will appear in the tooltip */
+            position: absolute;
+            bottom: 100%; /* Position it above the element */
+            left: 50%; /* Center it horizontally */
+            transform: translateX(-50%); /* Adjust for perfect centering */
+            background-color: #333; /* Tooltip background color */
+            color: white; /* Tooltip text color */
+            padding: 5px 10px; /* Padding for the tooltip */
+            border-radius: 5px; /* Rounded corners */
+            visibility: hidden; /* Initially hidden */
+            opacity: 0; /* Start with opacity 0 */
+            transition: opacity 0.3s ease; /* Smooth transition effect */
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+
+        /* Show the tooltip when the element is hovered */
+        .tooltip:hover::after {
+            visibility: visible; /* Show the tooltip */
+            opacity: 1; /* Make the tooltip fully visible */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tooltip Example</h2>
+
+    <p>Hover over the word <span class="tooltip">Info</span> to see the tooltip.</p>
+
+</body>
+</html>

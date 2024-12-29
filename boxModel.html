@@ -1,0 +1,33 @@
+<!--Write a CSS class that meets the Box Model requirement for all the div tags in your page.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Example</title>
+    <style>
+        /* Apply a consistent box model to all div elements */
+        div {
+            box-sizing: border-box; /* This includes padding and border in the element's total width/height */
+            padding: 20px;          /* Adds space inside the div */
+            border: 2px solid #333; /* Adds a border around the div */
+            margin: 10px;           /* Adds space outside the div */
+            background-color: #f4f4f4; /* Light background for visibility */
+            font-family: Arial, sans-serif; /* Basic font style */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Box Model Example</h2>
+
+    <div>
+        <p>This is a div with padding, border, and margin applied. The content will be inside the padding, and the border surrounds the padding. The margin is outside the border.</p>
+    </div>
+
+    <div>
+        <p>This is another div, following the same box model properties.</p>
+    </div>
+
+</body>
+</html>

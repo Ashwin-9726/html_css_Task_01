@@ -1,0 +1,70 @@
+<!--Write HTML input tags snippet to show default values for all Form elements.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Default Values</title>
+</head>
+<body>
+
+    <h2>Form with Default Values</h2>
+    <form action="#" method="POST">
+        
+        <!-- Text input with default value -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" value="Rama Chandra" placeholder="Enter your full name">
+        <br><br>
+        
+        <!-- Email input with default value -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" value="ram@example.com" placeholder="Enter your email address">
+        <br><br>
+        
+        <!-- Password input with default value -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="password123" placeholder="Enter your password">
+        <br><br>
+
+        <!-- Radio buttons with default selection -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" checked> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <br><br>
+
+        <!-- Checkbox with default checked value -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked> Yes, please
+        <br><br>
+
+        <!-- Select dropdown with default value selected -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="India" selected>India</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+        <br><br>
+
+        <!-- Date input with default value -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" value="1990-01-01">
+        <br><br>
+
+        <!-- Number input with default value -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="5" min="1" max="10">
+        <br><br>
+
+        <!-- Time input with default value -->
+        <label for="appt">Appointment Time:</label>
+        <input type="time" id="appt" name="appt" value="14:30">
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

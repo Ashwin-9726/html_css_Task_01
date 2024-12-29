@@ -1,0 +1,136 @@
+<!--Use HTML & CSS to display different types of cursors.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Cursor Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .cursor-box {
+            width: 150px;
+            height: 150px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .default {
+            cursor: default;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .move {
+            cursor: move;
+        }
+
+        .text {
+            cursor: text;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+
+        .help {
+            cursor: help;
+        }
+
+        .crosshair {
+            cursor: crosshair;
+        }
+
+        .not-allowed {
+            cursor: not-allowed;
+        }
+
+        .progress {
+            cursor: progress;
+        }
+
+        .zoom-in {
+            cursor: zoom-in;
+        }
+
+        .zoom-out {
+            cursor: zoom-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Different Cursor Types</h2>
+    <p>Hover over each box to see different cursor styles in action.</p>
+
+    <div class="container">
+
+        <div class="cursor-box default">
+            Default
+        </div>
+
+        <div class="cursor-box pointer pointer">
+            Pointer
+        </div>
+
+        <div class="cursor-box move">
+            Move
+        </div>
+
+        <div class="cursor-box text">
+            Text
+        </div>
+
+        <div class="cursor-box wait">
+            Wait
+        </div>
+
+        <div class="cursor-box help">
+            Help
+        </div>
+
+        <div class="cursor-box crosshair">
+            Crosshair
+        </div>
+
+        <div class="cursor-box not-allowed">
+            Not Allowed
+        </div>
+
+        <div class="cursor-box progress">
+            Progress
+        </div>
+
+        <div class="cursor-box zoom-in">
+            Zoom In
+        </div>
+
+        <div class="cursor-box zoom-out">
+            Zoom Out
+        </div>
+
+    </div>
+
+</body>
+</html>
